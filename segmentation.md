@@ -12,9 +12,9 @@
     ```bash
     Xpra attach tcp:10.1.20.27:14500 --resize-display=no
     ```
-    或者如果 Xpra 执行程序不在环境变量中，需要手动在指定 Xpra 可执行程序的路径，以 `C:\Program Files\Xpra\xpra.exe` 为例
+    或者如果 Xpra 执行程序不在环境变量中，需要手动在指定 Xpra 可执行程序的路径，以 `C:\Program Files\Xpra\Xpra.exe` 为例
     ```bash
-    "C:\Program Files\Xpra\xpra.exe" attach tcp:10.1.20.27:14500 --resize-display=no
+    "C:\Program Files\Xpra\Xpra.exe" attach tcp:10.1.20.27:14500 --resize-display=no
     ```
 
   - 启动服务器虚拟桌面后，在桌面上右键，选择 `open terminal here` 打开一个服务器终端，启动 cellpose 运行环境并运行 cellpose GUI 界面
@@ -34,3 +34,5 @@
     # 手动指定使用第 4 张 GPU （编号3）
     CUDA_VISIBLE_DEVICES=3 python -m cellpose
     ```
+
+  - 数据位于 `/data/W00xx` 路径下
